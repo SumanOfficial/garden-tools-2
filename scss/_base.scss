@@ -1,0 +1,24 @@
+// colors
+$white: #fff;
+$black: #000;
+$yellow: #ffa81e;
+$dark-yellow: #ffa81e;
+$light-blue: #ebf1f3;
+$grey: #777777;
+
+// base settings
+*,
+html {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin sm {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
