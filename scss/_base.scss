@@ -5,7 +5,12 @@ $yellow: #ffa81e;
 $dark-yellow: #ffa81e;
 $light-blue: #ebf1f3;
 $grey: #777777;
-
+$navy-blue: #294c5b;
+$dark-blue: #1c2731;
+$orange: #ff6800;
+$light-blue: #ebf1f3;
+$red: #ab1600;
+$green: #2c5b29;
 // base settings
 *,
 html {
@@ -20,5 +25,44 @@ body {
 @mixin sm {
   @media screen and (max-width: 900px) {
     @content;
+  }
+}
+
+/* 5 Columns */
+.col-xs-5-cols,
+.col-sm-5-cols,
+.col-md-5-cols,
+.col-lg-5-cols {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-5-cols {
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+@media (min-width: 768px) {
+  .col-sm-5-cols {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-5-cols {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-5-cols {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 }

@@ -10,6 +10,52 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* 5 Columns */
+.col-xs-5-cols,
+.col-sm-5-cols,
+.col-md-5-cols,
+.col-lg-5-cols {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-5-cols {
+  -ms-flex: 0 0 20%;
+  -webkit-box-flex: 0;
+          flex: 0 0 20%;
+  max-width: 20%;
+}
+
+@media (min-width: 768px) {
+  .col-sm-5-cols {
+    -ms-flex: 0 0 20%;
+    -webkit-box-flex: 0;
+            flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-5-cols {
+    -ms-flex: 0 0 20%;
+    -webkit-box-flex: 0;
+            flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-5-cols {
+    -ms-flex: 0 0 20%;
+    -webkit-box-flex: 0;
+            flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
 #hero {
   background-image: url("../images/banner-back.png");
   background-position: center center;
@@ -232,5 +278,210 @@ body {
   margin: 0;
   padding: 20px 0;
   border-radius: 0%;
+}
+
+#market-assetsment {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  #market-assetsment {
+    margin-top: 50px;
+  }
+}
+
+#market-assetsment h1 {
+  font-size: 40px;
+}
+
+#market-assetsment .mobile-map {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  #market-assetsment .mobile-map {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+}
+
+#market-assetsment .places-mobile-view {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  #market-assetsment .places-mobile-view {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+#market-assetsment .places-mobile-view .btn {
+  width: 100%;
+}
+
+#market-assetsment .world-map {
+  margin-top: 100px;
+  background-image: url("../images/world-map.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 900px) {
+  #market-assetsment .world-map {
+    background-position: left center;
+    background-image: none;
+    display: none;
+  }
+}
+
+#market-assetsment .world-map .europe-select {
+  border: 0;
+  border-bottom: 1px solid #777777;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#market-assetsment .world-map .middle-select {
+  width: 250px;
+  border: 0;
+  border-bottom: 1px solid #777777;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#market-assetsment .world-map .ama {
+  margin-top: 450px;
+}
+
+#market-assetsment .world-map .ama .europe-select {
+  width: 200px;
+}
+
+#market-assetsment .world-map .apac {
+  margin-left: 100px;
+}
+
+.btn-yellow {
+  font-weight: bold;
+  color: #000;
+  background-color: #ffa81e;
+}
+
+.btn-yel, .btn-dark-yellow {
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffa81e;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.btn-yel:hover, .btn-dark-yellow:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-red {
+  font-weight: bold;
+  color: #fff;
+  background-color: #ab1600;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.btn-red:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-orange {
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff6800;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.btn-orange:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-green {
+  font-weight: bold;
+  color: #fff;
+  background-color: #2c5b29;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.btn-green:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-blue {
+  font-weight: bold;
+  color: #fff;
+  background-color: #1c2731;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.btn-blue:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.text-yellow {
+  color: #ffa81e;
+}
+
+#asia, #europe, #middle-east, #americas {
+  margin-top: 100px;
+  background-color: #ebf1f3;
+  padding: 80px 0;
+}
+
+#asia img, #europe img, #middle-east img, #americas img {
+  width: 100%;
+  height: auto;
+}
+
+#asia h2, #europe h2, #middle-east h2, #americas h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#asia .country, #europe .country, #middle-east .country, #americas .country {
+  text-align: center;
+}
+
+#asia .country img, #europe .country img, #middle-east .country img, #americas .country img {
+  width: 90px;
+  height: 90px;
+}
+
+#asia .country h6, #europe .country h6, #middle-east .country h6, #americas .country h6 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#europe {
+  margin-top: 0%;
+  background-color: #fff;
+}
+
+#americas {
+  margin-top: 0%;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
