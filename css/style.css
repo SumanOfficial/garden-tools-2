@@ -324,7 +324,7 @@ body {
 }
 
 #market-assetsment .world-map {
-  margin-top: 100px;
+  margin-top: 50px;
   background-image: url("../images/world-map.png");
   background-position: left center;
   background-repeat: no-repeat;
@@ -338,27 +338,43 @@ body {
   }
 }
 
-#market-assetsment .world-map .europe-select {
+#market-assetsment .world-map .europe-select, #market-assetsment .world-map .africa-select {
   border: 0;
   border-bottom: 1px solid #777777;
   font-weight: bold;
   font-size: 12px;
+  background-color: transparent;
+}
+
+#market-assetsment .world-map .africa-select {
+  margin: 0%;
+}
+
+#market-assetsment .world-map .middle {
+  margin-top: -100px;
+  margin-left: 20px;
 }
 
 #market-assetsment .world-map .middle-select {
-  width: 250px;
+  width: 150px;
   border: 0;
   border-bottom: 1px solid #777777;
   font-weight: bold;
   font-size: 12px;
+  background-color: transparent;
 }
 
 #market-assetsment .world-map .ama {
   margin-top: 450px;
 }
 
-#market-assetsment .world-map .ama .europe-select {
+#market-assetsment .world-map .ama .europe-select, #market-assetsment .world-map .ama .africa-select {
   width: 200px;
+  background-color: transparent;
+}
+
+#market-assetsment .world-map .asia {
+  margin-top: -50px;
 }
 
 #market-assetsment .world-map .apac {
