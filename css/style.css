@@ -104,7 +104,7 @@ body {
 }
 
 #hero .content {
-  padding: 250px 0;
+  padding: 300px 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -148,7 +148,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  margin-top: 50px;
   padding: 80px 0;
 }
 
@@ -195,6 +194,17 @@ body {
     width: 50px;
     height: 50px;
   }
+}
+
+#world-portfolio .content ul li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+#world-portfolio .content ul li a {
+  text-decoration: underline;
+  font-size: 16px;
+  color: #000;
 }
 
 #world-portfolio .select select {
@@ -246,6 +256,10 @@ body {
 
 #products .product-area h5 {
   font-size: 16px;
+  margin: 10px 0;
+}
+
+#products .product-area .product-text {
   padding: 5px;
 }
 
@@ -355,6 +369,10 @@ body {
   margin-left: 20px;
 }
 
+#market-assetsment .world-map .middle .amarica-items {
+  margin-top: 20px;
+}
+
 #market-assetsment .world-map .middle-select {
   width: 150px;
   border: 0;
@@ -368,9 +386,10 @@ body {
   margin-top: 450px;
 }
 
-#market-assetsment .world-map .ama .europe-select, #market-assetsment .world-map .ama .africa-select {
-  width: 200px;
-  background-color: transparent;
+#market-assetsment .world-map .ama .amarica-items {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 180px;
 }
 
 #market-assetsment .world-map .asia {
@@ -378,7 +397,38 @@ body {
 }
 
 #market-assetsment .world-map .apac {
-  margin-left: 100px;
+  margin-left: 80px;
+}
+
+#market-assetsment .world-map .apac .amarica-items {
+  width: 100%;
+  max-width: 200px;
+}
+
+#market-assetsment .world-map .amarica-items {
+  margin-left: 20px;
+}
+
+#market-assetsment .world-map .amarica-items .card {
+  background-color: #fff !important;
+  border-radius: 0%;
+}
+
+#market-assetsment .world-map .amarica-items .card-header {
+  padding: 5px 20px;
+  background-color: #fff;
+}
+
+#market-assetsment .world-map .amarica-items .card-body a {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#market-assetsment .world-map .eu {
+  margin-top: 50px;
+  margin-left: -80px;
 }
 
 .btn-yellow {
