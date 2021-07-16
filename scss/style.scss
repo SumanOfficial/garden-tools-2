@@ -114,7 +114,7 @@
         list-style-type: none;
         margin-top: 10px;
         a {
-          text-decoration: underline;
+          text-decoration: none;
           font-size: 16px;
           color: #000;
           // font-weight: bold;
@@ -139,6 +139,11 @@
 }
 
 #products {
+  h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
   margin-top: 100px;
   .sort-area {
     select {
@@ -280,7 +285,7 @@
       }
     }
     .asia {
-      margin-top: -50px;
+      margin-top: -120px;
     }
     .apac {
       margin-left: 80px;
@@ -290,17 +295,33 @@
         max-width: 200px;
       }
     }
-
+    .connector {
+      .bigline {
+        width: 2px;
+        background-color: #ab1600;
+        height: 200px;
+      }
+    }
     .amarica-items {
       margin-left: 20px;
+
       .card {
         background-color: #fff !important;
         // border: none;
-        border-radius: 0%;
+        border-radius: 50px;
+        border: 2px solid #ab1600;
+        margin: 5px 0;
+        text-align: center;
+        text-transform: uppercase;
       }
       .card-header {
-        padding: 5px 20px;
+        padding: 2px 20px;
         background-color: #fff;
+        a {
+          font-size: 12px;
+          font-weight: bold;
+          color: #000;
+        }
       }
       .card-body {
         a {
@@ -310,8 +331,59 @@
       }
     }
     .eu {
-      margin-top: 50px;
+      margin-top: 100px;
       margin-left: -80px;
+      .amarica-items {
+        .card {
+          border: 2px solid #2c5b29;
+          a {
+            font-size: 12px;
+            font-weight: bold;
+            color: #000;
+          }
+          button {
+            font-size: 12px;
+            font-weight: bold;
+            color: #000;
+          }
+        }
+      }
+    }
+    .ama {
+      .amarica-items {
+        .card {
+          border: 2px solid #1c2731;
+          a {
+            font-size: 12px;
+            font-weight: bold;
+            color: #000;
+          }
+        }
+      }
+    }
+    .middle {
+      .amarica-items {
+        .card {
+          border: 2px solid #ffa81e;
+          a {
+            font-size: 12px;
+            font-weight: bold;
+            color: #000;
+          }
+        }
+      }
+    }
+    .asia {
+      .amarica-items {
+        .card {
+          border: 2px solid #ff6800;
+          a {
+            font-size: 12px;
+            font-weight: bold;
+            color: #000;
+          }
+        }
+      }
     }
   }
 }
