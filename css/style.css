@@ -179,6 +179,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   margin: 20px 0;
+  text-transform: uppercase;
 }
 
 #world-portfolio .content .icon {
@@ -202,9 +203,13 @@ body {
 }
 
 #world-portfolio .content ul li a {
-  text-decoration: none;
-  font-size: 16px;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: bold;
   color: #000;
+  text-transform: uppercase;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
 }
 
 #world-portfolio .select select {
@@ -230,13 +235,20 @@ body {
   font-weight: bold;
 }
 
-#products .sort-area select {
-  width: 100%;
-  margin: 5px 0;
-  padding: 5px 10px;
-  border: 1px solid #777777;
-  color: #000;
-  border-radius: 6px;
+#products .sort-area .card {
+  border-radius: 20px;
+  font-size: 12px;
+  position: relative;
+}
+
+#products .sort-area .card .card-header {
+  font-weight: bold;
+}
+
+#products .sort-area .card span {
+  color: #d42308;
+  position: absolute;
+  right: 2%;
 }
 
 #products .sort-by select {
@@ -343,6 +355,31 @@ body {
   width: 100%;
 }
 
+#market-assetsment .places-mobile-view .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+#market-assetsment .places-mobile-view .content a {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
 #market-assetsment .world-map {
   margin-top: 50px;
   background-image: url("../images/world-map.png");
@@ -371,7 +408,7 @@ body {
 }
 
 #market-assetsment .world-map .middle {
-  margin-top: -100px;
+  margin-top: -120px;
   margin-left: 20px;
 }
 
@@ -380,7 +417,6 @@ body {
 }
 
 #market-assetsment .world-map .middle-select {
-  width: 150px;
   border: 0;
   border-bottom: 1px solid #777777;
   font-weight: bold;
@@ -389,7 +425,7 @@ body {
 }
 
 #market-assetsment .world-map .ama {
-  margin-top: 450px;
+  margin-top: 500px;
 }
 
 #market-assetsment .world-map .ama .amarica-items {
@@ -399,7 +435,7 @@ body {
 }
 
 #market-assetsment .world-map .asia {
-  margin-top: -120px;
+  margin-top: -60px;
 }
 
 #market-assetsment .world-map .apac {
@@ -417,8 +453,12 @@ body {
   height: 200px;
 }
 
+#market-assetsment .world-map .amarica {
+  margin-top: 100px;
+}
+
 #market-assetsment .world-map .amarica-items {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 #market-assetsment .world-map .amarica-items .card {
@@ -431,14 +471,21 @@ body {
 }
 
 #market-assetsment .world-map .amarica-items .card-header {
-  padding: 2px 20px;
+  padding: 0px;
   background-color: #fff;
 }
 
 #market-assetsment .world-map .amarica-items .card-header a {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   color: #000;
+  text-transform: uppercase;
+}
+
+#market-assetsment .world-map .amarica-items .card-header .btn.focus,
+#market-assetsment .world-map .amarica-items .card-header .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #market-assetsment .world-map .amarica-items .card-body a {
@@ -457,46 +504,39 @@ body {
   border: 2px solid #2c5b29;
 }
 
+#market-assetsment .world-map .eu .amarica-items .card .card-header {
+  padding: 0px;
+}
+
 #market-assetsment .world-map .eu .amarica-items .card a {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   color: #000;
+  text-transform: uppercase;
 }
 
 #market-assetsment .world-map .eu .amarica-items .card button {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   color: #000;
+  text-transform: uppercase;
+}
+
+#market-assetsment .world-map .eu .amarica-items .card h2 {
+  width: 150px;
 }
 
 #market-assetsment .world-map .ama .amarica-items .card {
   border: 2px solid #1c2731;
-}
-
-#market-assetsment .world-map .ama .amarica-items .card a {
-  font-size: 12px;
-  font-weight: bold;
-  color: #000;
+  width: 150px;
 }
 
 #market-assetsment .world-map .middle .amarica-items .card {
   border: 2px solid #ffa81e;
 }
 
-#market-assetsment .world-map .middle .amarica-items .card a {
-  font-size: 12px;
-  font-weight: bold;
-  color: #000;
-}
-
 #market-assetsment .world-map .asia .amarica-items .card {
   border: 2px solid #ff6800;
-}
-
-#market-assetsment .world-map .asia .amarica-items .card a {
-  font-size: 12px;
-  font-weight: bold;
-  color: #000;
 }
 
 .btn-yellow {
