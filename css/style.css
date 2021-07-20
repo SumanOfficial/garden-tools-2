@@ -6,6 +6,11 @@ html {
           box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -395,148 +400,66 @@ body {
   }
 }
 
-#market-assetsment .world-map .europe-select, #market-assetsment .world-map .africa-select {
-  border: 0;
-  border-bottom: 1px solid #777777;
-  font-weight: bold;
-  font-size: 12px;
-  background-color: transparent;
+#market-assetsment .world-map .amarica, #market-assetsment .world-map .europe, #market-assetsment .world-map .amazon, #market-assetsment .world-map .asia, #market-assetsment .world-map .middle {
+  margin-top: -30px;
 }
 
-#market-assetsment .world-map .africa-select {
-  margin: 0%;
-}
-
-#market-assetsment .world-map .middle {
-  margin-top: -120px;
-  margin-left: 20px;
-}
-
-#market-assetsment .world-map .middle .amarica-items {
-  margin-top: 20px;
-}
-
-#market-assetsment .world-map .middle-select {
-  border: 0;
-  border-bottom: 1px solid #777777;
-  font-weight: bold;
-  font-size: 12px;
-  background-color: transparent;
-}
-
-#market-assetsment .world-map .ama {
-  margin-top: 500px;
-}
-
-#market-assetsment .world-map .ama .amarica-items {
-  margin-top: 20px;
-  width: 100%;
-  max-width: 180px;
-}
-
-#market-assetsment .world-map .asia {
-  margin-top: -60px;
-}
-
-#market-assetsment .world-map .apac {
-  margin-left: 80px;
-}
-
-#market-assetsment .world-map .apac .amarica-items {
-  width: 100%;
-  max-width: 200px;
-}
-
-#market-assetsment .world-map .connector .bigline {
-  width: 2px;
-  background-color: #ab1600;
-  height: 200px;
-}
-
-#market-assetsment .world-map .amarica {
-  margin-top: 100px;
-}
-
-#market-assetsment .world-map .amarica-items {
-  margin-left: 10px;
-}
-
-#market-assetsment .world-map .amarica-items .card {
-  background-color: #fff !important;
-  border-radius: 50px;
-  border: 2px solid #ab1600;
-  margin: 5px 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-#market-assetsment .world-map .amarica-items .card-header {
-  padding: 0px;
-  background-color: #fff;
-}
-
-#market-assetsment .world-map .amarica-items .card-header a {
-  font-size: 10px;
-  font-weight: bold;
-  color: #000;
-  text-transform: uppercase;
-}
-
-#market-assetsment .world-map .amarica-items .card-header .btn.focus,
-#market-assetsment .world-map .amarica-items .card-header .btn:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-#market-assetsment .world-map .amarica-items .card-body a {
-  color: #000;
+#market-assetsment .world-map .amarica .content, #market-assetsment .world-map .europe .content, #market-assetsment .world-map .amazon .content, #market-assetsment .world-map .asia .content, #market-assetsment .world-map .middle .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#market-assetsment .world-map .eu {
-  margin-top: 100px;
+#market-assetsment .world-map .amarica .content p, #market-assetsment .world-map .europe .content p, #market-assetsment .world-map .amazon .content p, #market-assetsment .world-map .asia .content p, #market-assetsment .world-map .middle .content p {
+  width: 100%;
+  padding: 0 10px;
+  border-bottom: 1px solid #000;
+  margin: 0;
+  margin-left: 20px;
+  position: relative;
+}
+
+#market-assetsment .world-map .amarica .content a, #market-assetsment .world-map .europe .content a, #market-assetsment .world-map .amazon .content a, #market-assetsment .world-map .asia .content a, #market-assetsment .world-map .middle .content a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#market-assetsment .world-map .amarica .content a span, #market-assetsment .world-map .europe .content a span, #market-assetsment .world-map .amazon .content a span, #market-assetsment .world-map .asia .content a span, #market-assetsment .world-map .middle .content a span {
+  position: absolute;
+  right: 0%;
+  font-size: 14px;
+}
+
+#market-assetsment .world-map .europe {
   margin-left: -80px;
 }
 
-#market-assetsment .world-map .eu .amarica-items .card {
-  border: 2px solid #2c5b29;
+#market-assetsment .world-map .amazon {
+  margin-top: 430px;
 }
 
-#market-assetsment .world-map .eu .amarica-items .card .card-header {
-  padding: 0px;
+#market-assetsment .world-map .asia {
+  margin-top: 450px;
 }
 
-#market-assetsment .world-map .eu .amarica-items .card a {
-  font-size: 10px;
-  font-weight: bold;
-  color: #000;
-  text-transform: uppercase;
+#market-assetsment .world-map .asia .heading {
+  margin-left: 100px;
 }
 
-#market-assetsment .world-map .eu .amarica-items .card button {
-  font-size: 10px;
-  font-weight: bold;
-  color: #000;
-  text-transform: uppercase;
+#market-assetsment .world-map .middle {
+  margin-top: -40px;
 }
 
-#market-assetsment .world-map .eu .amarica-items .card h2 {
-  width: 150px;
-}
-
-#market-assetsment .world-map .ama .amarica-items .card {
-  border: 2px solid #1c2731;
-  width: 150px;
-}
-
-#market-assetsment .world-map .middle .amarica-items .card {
-  border: 2px solid #ffa81e;
-}
-
-#market-assetsment .world-map .asia .amarica-items .card {
-  border: 2px solid #ff6800;
+#market-assetsment .world-map .middle .content p {
+  width: 100%;
 }
 
 .btn-yellow {
@@ -619,32 +542,32 @@ body {
   color: #ffa81e;
 }
 
-#asia, #europe, #middle-east, #americas {
+#asia, #europe, #africa, #middle-east, #americas {
   margin-top: 100px;
   background-color: #ebf1f3;
   padding: 80px 0;
 }
 
-#asia img, #europe img, #middle-east img, #americas img {
+#asia img, #europe img, #africa img, #middle-east img, #americas img {
   width: 100%;
   height: auto;
 }
 
-#asia h2, #europe h2, #middle-east h2, #americas h2 {
+#asia h2, #europe h2, #africa h2, #middle-east h2, #americas h2 {
   font-size: 40px;
   font-weight: bold;
 }
 
-#asia .country, #europe .country, #middle-east .country, #americas .country {
+#asia .country, #europe .country, #africa .country, #middle-east .country, #americas .country {
   text-align: center;
 }
 
-#asia .country img, #europe .country img, #middle-east .country img, #americas .country img {
+#asia .country img, #europe .country img, #africa .country img, #middle-east .country img, #americas .country img {
   width: 90px;
   height: 90px;
 }
 
-#asia .country h6, #europe .country h6, #middle-east .country h6, #americas .country h6 {
+#asia .country h6, #europe .country h6, #africa .country h6, #middle-east .country h6, #americas .country h6 {
   font-size: 14px;
   font-weight: bold;
 }

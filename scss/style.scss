@@ -279,142 +279,57 @@
       display: none;
     }
 
-    .europe-select {
-      border: 0;
-      border-bottom: 1px solid $grey;
-      font-weight: bold;
-      font-size: 12px;
-      background-color: transparent;
-    }
-    .africa-select {
-      @extend .europe-select;
-      margin: 0%;
-    }
-    .middle {
-      margin-top: -120px;
-      margin-left: 20px;
-      .amarica-items {
-        margin-top: 20px;
-      }
-    }
-    .middle-select {
-      // width: 150px;
-      border: 0;
-      border-bottom: 1px solid $grey;
-      font-weight: bold;
-      font-size: 12px;
-      background-color: transparent;
-    }
-    .ama {
-      margin-top: 500px;
-      .amarica-items {
-        margin-top: 20px;
-        width: 100%;
-        max-width: 180px;
-      }
-    }
-    .asia {
-      margin-top: -60px;
-    }
-    .apac {
-      margin-left: 80px;
-
-      .amarica-items {
-        width: 100%;
-        max-width: 200px;
-      }
-    }
-    .connector {
-      .bigline {
-        width: 2px;
-        background-color: #ab1600;
-        height: 200px;
-      }
-    }
     .amarica {
-      margin-top: 100px;
-    }
-    .amarica-items {
-      margin-left: 10px;
-
-      .card {
-        background-color: #fff !important;
-        // border: none;
-        border-radius: 50px;
-        border: 2px solid #ab1600;
-        margin: 5px 0;
-        text-align: center;
-        text-transform: uppercase;
-      }
-      .card-header {
-        padding: 0px;
-        // padding: 2px 20px;
-        background-color: #fff;
+      // margin-top: 100px;
+      margin-top: -30px;
+      .content {
+        display: flex;
+        flex-direction: column;
+        p {
+          width: 100%;
+          padding: 0 10px;
+          border-bottom: 1px solid #000;
+          margin: 0;
+          margin-left: 20px;
+          position: relative;
+        }
         a {
-          font-size: 10px;
+          text-decoration: none;
+          font-size: 12px;
           font-weight: bold;
           color: #000;
+          text-align: left;
           text-transform: uppercase;
-        }
-        .btn.focus,
-        .btn:focus {
-          box-shadow: none;
-        }
-      }
-      .card-body {
-        a {
-          color: #000;
-          display: flex;
+
+          span {
+            position: absolute;
+            right: 0%;
+            font-size: 14px;
+          }
         }
       }
     }
-    .eu {
-      margin-top: 100px;
+    .europe {
+      @extend .amarica;
       margin-left: -80px;
-      .amarica-items {
-        .card {
-          border: 2px solid #2c5b29;
-          .card-header {
-            padding: 0px;
-          }
-          a {
-            font-size: 10px;
-            font-weight: bold;
-            color: #000;
-            text-transform: uppercase;
-          }
-          button {
-            font-size: 10px;
-            font-weight: bold;
-            color: #000;
-            text-transform: uppercase;
-            // padding: 0;
-          }
-          h2 {
-            width: 150px;
-          }
-        }
-      }
     }
-    .ama {
-      .amarica-items {
-        .card {
-          border: 2px solid #1c2731;
-          width: 150px;
-        }
+    .amazon {
+      @extend .amarica;
+      margin-top: 430px;
+    }
+    .asia {
+      @extend .amarica;
+      margin-top: 450px;
+      .heading {
+        margin-left: 100px;
       }
     }
     .middle {
-      .amarica-items {
-        .card {
-          border: 2px solid #ffa81e;
-        }
-      }
-    }
-    .asia {
-      .amarica-items {
-        .card {
-          border: 2px solid #ff6800;
+      @extend .amarica;
+      margin-top: -40px;
+      .content {
+        p {
+          width: 100%;
         }
       }
     }
@@ -518,11 +433,11 @@
   margin-top: 0%;
   background-color: $white;
 }
-
+#africa {
+  @extend #asia;
+}
 #middle-east {
   @extend #asia;
-  // margin-top: 0%;
-  // background-color: $white;
 }
 #americas {
   @extend #asia;
