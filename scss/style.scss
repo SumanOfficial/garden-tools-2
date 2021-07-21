@@ -334,6 +334,32 @@
       }
     }
   }
+  #What-Included-Modal {
+    .modal-header {
+      border: none;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-body {
+      text-align: center;
+      padding: 30px;
+      .card {
+        padding: 20px;
+        border: none;
+      }
+      h5 {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+          list-style-type: none;
+        }
+      }
+    }
+  }
 }
 .btn-yellow {
   font-weight: bold;

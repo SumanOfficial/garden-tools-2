@@ -462,6 +462,37 @@ body {
   width: 100%;
 }
 
+#market-assetsment #What-Included-Modal .modal-header {
+  border: none;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#market-assetsment #What-Included-Modal .modal-body {
+  text-align: center;
+  padding: 30px;
+}
+
+#market-assetsment #What-Included-Modal .modal-body .card {
+  padding: 20px;
+  border: none;
+}
+
+#market-assetsment #What-Included-Modal .modal-body h5 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#market-assetsment #What-Included-Modal .modal-body ul li {
+  font-size: 14px;
+  list-style-type: none;
+}
+
 .btn-yellow {
   font-weight: bold;
   color: #000;
