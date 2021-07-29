@@ -33,3 +33,18 @@ $(".product-slider").slick({
     // instead of a settings object
   ],
 });
+
+$("#testimonial").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+});
+$(".clients-logo").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+});
