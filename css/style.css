@@ -120,18 +120,30 @@ body {
 }
 
 #hero .cat {
-  background-color: #ffa91e25;
-  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.438);
   text-transform: uppercase;
+  color: #fff;
 }
 
 #hero .cat h3 {
-  font-size: 20px;
+  font-size: 30px;
+  color: #fff;
 }
 
 #hero .cat h5 {
   font-size: 16px;
   font-weight: bold;
+}
+
+#hero .cat img {
+  width: 100%;
+  height: auto;
+  max-width: 40px;
+}
+
+#hero .cat .icon {
+  padding: 20px 0;
+  background-color: #ffa81e;
 }
 
 .btn-yellow {
