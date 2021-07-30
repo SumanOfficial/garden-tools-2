@@ -40,6 +40,7 @@ $("#testimonial").slick({
   speed: 300,
   slidesToShow: 1,
   adaptiveHeight: true,
+  autoplay: true,
 });
 $(".clients-logo").slick({
   dots: false,
@@ -48,4 +49,5 @@ $(".clients-logo").slick({
   slidesToShow: 5,
   slidesToScroll: 5,
   adaptiveHeight: true,
+  autoplay: true,
 });
