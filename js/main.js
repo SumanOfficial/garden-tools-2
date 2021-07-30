@@ -42,9 +42,10 @@ $("#testimonial").slick({
   adaptiveHeight: true,
 });
 $(".clients-logo").slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 300,
-  slidesToShow: 1,
+  slidesToShow: 5,
+  slidesToScroll: 5,
   adaptiveHeight: true,
 });

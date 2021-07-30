@@ -68,9 +68,10 @@ body {
   background-size: cover;
 }
 
-#hero h2 {
+#hero h1 {
   color: #fff;
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 #hero h3 {
@@ -109,7 +110,7 @@ body {
 }
 
 #hero .content {
-  padding: 250px 0 200px 0;
+  padding: 180px 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -123,27 +124,51 @@ body {
   background-color: rgba(0, 0, 0, 0.438);
   text-transform: uppercase;
   color: #fff;
+  border-radius: 10px;
 }
 
 #hero .cat h3 {
-  font-size: 30px;
+  font-size: 26px;
   color: #fff;
 }
 
 #hero .cat h5 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 #hero .cat img {
   width: 100%;
   height: auto;
-  max-width: 40px;
+  max-width: 30px;
 }
 
 #hero .cat .icon {
   padding: 20px 0;
-  background-color: #ffa81e;
+  background-color: rgba(0, 0, 0, 0.638);
+  border-radius: 10px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+#clients-area {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#clients-area img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 150px;
+}
+
+#clients-area h2 {
+  font-size: 30px;
+}
+
+#clients-area .clients-logo {
+  margin-top: 20px;
 }
 
 .btn-yellow {
@@ -180,7 +205,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 #world-portfolio h1 {
@@ -209,9 +234,8 @@ body {
 
 #world-portfolio .content h5 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin: 20px 0;
-  font-style: italic;
   text-transform: uppercase;
 }
 
@@ -234,19 +258,22 @@ body {
   list-style-type: none;
   margin-top: 10px;
   text-align: left;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 #world-portfolio .content ul li img {
   width: 100%;
   height: auto;
   max-width: 40px;
+  max-height: 40px;
+  background-color: #fff;
   padding: 5px;
   border-radius: 20px;
+  border: 2px solid #000;
+  margin-right: 10px;
 }
 
 #world-portfolio .content ul li a {
-  margin-left: 20px;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
@@ -331,18 +358,6 @@ body {
   #products .product-area .product-slider {
     margin-top: 30px;
   }
-}
-
-#clients-area {
-  margin-top: 100px;
-  text-align: center;
-}
-
-#clients-area img {
-  width: 100%;
-  height: auto;
-  max-width: 200px;
-  max-height: 150px;
 }
 
 #form-area {

@@ -5,9 +5,10 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  h2 {
+  h1 {
     color: $white;
     font-size: 30px;
+    text-transform: uppercase;
   }
   h3 {
     color: $white;
@@ -35,7 +36,7 @@
     }
   }
   .content {
-    padding: 250px 0 200px 0;
+    padding: 180px 0;
     @include sm {
       padding: 50px 0;
       text-align: center;
@@ -45,24 +46,45 @@
     background-color: rgba(0, 0, 0, 0.438);
     text-transform: uppercase;
     color: $white;
+    border-radius: 10px;
+    // margin-bottom: 20px;
     h3 {
-      font-size: 30px;
+      font-size: 26px;
       color: $white;
     }
     h5 {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
     }
     img {
       width: 100%;
       height: auto;
-      max-width: 40px;
+      max-width: 30px;
       // margin: 15px 0;
     }
     .icon {
       padding: 20px 0;
-      background-color: $yellow;
+      background-color: rgba(0, 0, 0, 0.638);
+      border-radius: 10px;
+      border-bottom-left-radius: 0%;
+      border-bottom-right-radius: 0%;
     }
+  }
+}
+#clients-area {
+  margin-top: 50px;
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 150px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .clients-logo {
+    margin-top: 20px;
   }
 }
 .btn-yellow {
@@ -97,7 +119,7 @@
   background-size: cover;
   height: auto;
   // margin-top: 50px;
-  padding: 80px 0;
+  padding: 100px 0;
 
   h1 {
     font-size: 30px;
@@ -118,9 +140,9 @@
     text-align: center;
     h5 {
       font-weight: bold;
-      font-size: 18px;
+      font-size: 20px;
       margin: 20px 0;
-      font-style: italic;
+      // font-style: italic;
       text-transform: uppercase;
     }
     .icon {
@@ -135,21 +157,25 @@
       }
     }
     ul {
+      // margin-top: 20px;
       li {
         list-style-type: none;
         margin-top: 10px;
         text-align: left;
-        margin-left: 30px;
+        margin-left: 40px;
         img {
           width: 100%;
           height: auto;
           max-width: 40px;
-          // background-color: #ffa81e;
+          max-height: 40px;
+          background-color: #fff;
           padding: 5px;
           border-radius: 20px;
+          border: 2px solid $black;
+          margin-right: 10px;
         }
         a {
-          margin-left: 20px;
+          // margin-left: 10px;
           text-decoration: none;
           font-size: 14px;
           font-weight: bold;
@@ -236,16 +262,6 @@
         margin-top: 30px;
       }
     }
-  }
-}
-#clients-area {
-  margin-top: 100px;
-  text-align: center;
-  img {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-    max-height: 150px;
   }
 }
 
